@@ -39,6 +39,41 @@
     <footer>
         <p>© St. Hector's Veterinary Clinic 2022</p>
         <footer>
+            <form action="/home/search" method="get">
+                <input name="search" type="text">
+                <input type="submit" value="Search">
+            </form>
+
+
+
+
+
+            <ul>
+
+
+
+                <?php foreach ($animals as $value): ?>
+
+                <li><strong>NAME:
+                        <?=$value->name?>
+                    </strong></li>
+                <li>Species:
+                    <?=$value->species?>
+                </li>
+                <li>Breed:
+                    <?=$value->breed?>
+                </li>
+                <li>Age:
+                    <?=$value->age?>
+                </li>
+                <li>Weight:
+                    <?=$value->weight?>
+                </li>
+                <?php endforeach; ?>
+
+
+
+            </ul>
 </body>
 
 </html>
