@@ -19,4 +19,4 @@ Route::get('/', function () {
 
 Route::get('/home', ['App\Http\Controllers\IndexController', 'index']);
 Route::get('/home/search', ['App\Http\Controllers\IndexController', 'search']);
-Route::get('/animal/detail/{movie_id}', ['App\Http\Controllers\AnimalController', 'detail'])->whereNumber('movie_id')->name('animal.detail');
+Route::get('/animal/detail/{animal_id}', ['App\Http\Controllers\AnimalController', 'detail'])->whereNumber('animal_id')->name('animal.detail');
