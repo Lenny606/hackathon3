@@ -32,20 +32,20 @@
     <body>
         <div class="animal_detail">
             <img class="animal_detail__pic" src={{"/images/pets/".$animal_img}} alt="img" />
-            <div class="animal_detail__list">
-                <ul>
-                    <li><strong>Name: {{$animal_detail->name}}</strong></li>
-                    <li>Breed: {{$animal_detail->breed}}</li>
-                    <li>Age: {{$animal_detail->age}}</li>
-                    <li>Weight: {{$animal_detail->weight}}</li>
-                </ul>
-            </div>
+
+            <ul class="animal_detail__list">
+                <li><strong>Name: {{$animal_detail->name}}</strong></li>
+                <li>Breed: {{$animal_detail->breed}}</li>
+                <li>Age: {{$animal_detail->age}}</li>
+                <li>Weight: {{$animal_detail->weight}}</li>
+            </ul>
+
 
         </div>
 
         <footer>
             <p>© St. Hector's Veterinary Clinic 2022</p>
-            <footer>
+        </footer>
 
 
     </body>
