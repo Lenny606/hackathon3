@@ -34,20 +34,17 @@
     <div class="main">
         <div class="h1">
 
-<<<<<<< HEAD
+
             <h1><strong>"AT ST. HECTOR'S, WE CARE."</strong></h1>
             <br>
         </div>
-=======
-<<<<<<< HEAD
+
  
-        <h1 class="h2">"AT ST. HECTOR'S, WE CARE."</h1>
-        <br>
-=======
-            <h1><strong>"AT ST. HECTOR'S, WE CARE."</strong></h1>
-            <br>
+        
+
+           
         </div>
->>>>>>> main
+
 
         <div>
             @if (Session::has('success_message'))
@@ -57,7 +54,7 @@
         </div>
      
     @endif
->>>>>>> feat/form
+
 
     </div>
     <footer>
