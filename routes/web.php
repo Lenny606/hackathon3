@@ -21,6 +21,6 @@ Route::get('/home', ['App\Http\Controllers\IndexController', 'index']);
 Route::get('/home/search', ['App\Http\Controllers\IndexController', 'search']);
 Route::get('/animal/detail/{animal_id}', ['App\Http\Controllers\AnimalController', 'detail'])->whereNumber('animal_id')->name('animal.detail');
 Route::get('/create',['App\Http\Controllers\FormController', 'create']);
-Route::post('/animal/detail/{animal_id}',['App\Http\Controllers\FormController', 'store']);
+Route::post('/animals/detail',['App\Http\Controllers\FormController', 'store']);
 
 

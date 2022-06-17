@@ -25,13 +25,26 @@
         <form action="/home/search" method="get">
             <input name="search" type="text">
             <input type="submit" value="Search">
+            <a href="/create">
+                <input type="button"  value="New Record" />
+                </a>
         </form>
 
     </nav>
     <div class="main">
 
+ 
         <h1 class="h2">"AT ST. HECTOR'S, WE CARE."</h1>
         <br>
+
+        <div>
+            @if (Session::has('success_message'))
+     
+        <div class="alert alert-success">
+            {{ Session::get('success_message') }}
+        </div>
+     
+    @endif
 
     </div>
     <footer>

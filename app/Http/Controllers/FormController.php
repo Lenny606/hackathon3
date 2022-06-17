@@ -35,9 +35,9 @@ public function store(Request $request)
 
         // save the record into DB
         $record->save();
-        session()->flash("success_message", "animal saved");
+        session()->flash("success_message", "Animal has been saved succesfully");
 
-        return redirect( url('/animals/detail/'.$animal_id) );
+        return redirect( url('/home') );
     }
 
     // public function edit($id)
