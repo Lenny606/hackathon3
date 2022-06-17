@@ -7,7 +7,7 @@
     <title>Create</title>
 </head>
 <body>
-    <form action="/create/new" method="post">
+    <form action="/animals/detail" method="post">
         @csrf
         Name::
         <input name="name" type="text"> <br>
