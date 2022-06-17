@@ -28,6 +28,7 @@ class IndexController extends Controller
             $result = Animal::where('name', 'like', '%'.$name.'%')
                         ->orWhere('species', 'like', '%'.$name.'%')
                         ->orWhere('breed', 'like', '%'.$name.'%')
+                        ->limit(20) 
                         ->get();
             
             

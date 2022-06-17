@@ -71,3 +71,8 @@ a:hover {
 a :visited {
     color: inherit;
 }
+
+.animal_detail {
+    display: flex;
+    
+}

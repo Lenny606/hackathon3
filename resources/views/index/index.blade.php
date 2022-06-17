@@ -15,7 +15,7 @@
     <nav class="nav">
 
         <div class=logo>
-            <img src="img/vetlogo.png" />
+            <img src="/img/vetlogo.png">
             <h2 class="h2">ST. HECTOR'S VETERINARY CLINIC</h2>
         </div>
 

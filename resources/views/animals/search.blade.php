@@ -15,7 +15,7 @@
     <nav class="nav">
 
         <div class=logo>
-            <img src="img/vetlogo.png" />
+            <img src="/img/vetlogo.png" />
             <h2 class="h2">ST. HECTOR'S VETERINARY CLINIC</h2>
         </div>
 
@@ -34,9 +34,9 @@
             @foreach ($result as $animal)
             <li>
                 <a href="{{route('animal.detail', $animal->id)}}">
-                    {{ $animal->name }}
-                    ({{ $animal->age }})
-                    ({{ $animal->weight }})
+                    Pet name: {{ $animal->name }} |
+                    Age: {{ $animal->age }} |
+                    Weight: {{ $animal->weight }}
                 </a>
             </li>
             @endforeach
