@@ -74,5 +74,14 @@ a :visited {
 
 .animal_detail {
     display: flex;
-    
+    justify-content: center;
+
+}
+
+.animal_detail__pic {
+    width: 300%;
+}
+
+animal_detail__list {
+    font-size: 200%;
 }

@@ -15,8 +15,11 @@
     <nav class="nav">
 
         <div class=logo>
-            <img src="/img/vetlogo.png">
-            <h2 class="h2">ST. HECTOR'S VETERINARY CLINIC</h2>
+            <a href="http://www.clinic.pets/home"><img src="/img/vetlogo.png"></a>
+            <a href="http://www.clinic.pets/home">
+                <h2 class="h2">ST. HECTOR'S VETERINARY CLINIC</h2>
+            </a>
+
         </div>
 
         <form action="/home/search" method="get">

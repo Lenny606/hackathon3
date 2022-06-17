@@ -15,8 +15,11 @@
     <nav class="nav">
 
         <div class=logo>
-            <img src="/img/vetlogo.png" />
-            <h2 class="h2">ST. HECTOR'S VETERINARY CLINIC</h2>
+            <a href="http://www.clinic.pets/home"><img src="/img/vetlogo.png"></a>
+            <a href="http://www.clinic.pets/home">
+                <h2 class="h2">ST. HECTOR'S VETERINARY CLINIC</h2>
+            </a>
+
         </div>
 
         <form action="/home/search" method="get">
@@ -31,7 +34,7 @@
             <img class="animal_detail__pic" src={{"/images/pets/".$animal_img}} alt="img" />
             <div class="animal_detail__list">
                 <ul>
-                    <li>Name: {{$animal_detail->name}}</li>
+                    <li><strong>Name: {{$animal_detail->name}}</strong></li>
                     <li>Breed: {{$animal_detail->breed}}</li>
                     <li>Age: {{$animal_detail->age}}</li>
                     <li>Weight: {{$animal_detail->weight}}</li>
