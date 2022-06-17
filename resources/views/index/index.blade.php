@@ -29,9 +29,11 @@
 
     </nav>
     <div class="main">
+        <div class="h1">
 
-        <h1 class="h2">"AT ST. HECTOR'S, WE CARE."</h1>
-        <br>
+            <h1><strong>"AT ST. HECTOR'S, WE CARE."</strong></h1>
+            <br>
+        </div>
 
     </div>
     <footer>
