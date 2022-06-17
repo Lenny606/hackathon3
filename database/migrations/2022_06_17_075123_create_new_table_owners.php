@@ -15,10 +15,10 @@ return new class extends Migration
     {
         Schema::create('owners', function (Blueprint $table) {
             $table->id()->unsigned()->autoincrement();
-            $table->text('first_name')->nullable();            
-            $table->text('surname')->nullable();
-            $table->text('email')->nullable();
-            $table->text('phone')->nullable();
+            $table->string('first_name')->nullable();            
+            $table->string('surname')->nullable();
+            $table->string('email')->nullable();
+            $table->string('phone')->nullable();
             $table->text('address')->nullable();
             $table->timestamps();
         });

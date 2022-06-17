@@ -17,9 +17,9 @@ return new class extends Migration
             $table->id();
             $table->bigInteger('image_id')->unsigned()->nullable();            
             $table->bigInteger('owner_id')->nullable();
-            $table->text('name')->nullable();
-            $table->text('species')->nullable();
-            $table->text('breed')->nullable();
+            $table->string('name')->nullable();
+            $table->string('species')->nullable();
+            $table->string('breed')->nullable();
             $table->integer('age')->nullable();
             $table->integer('weight')->nullable();
             $table->timestamps();
