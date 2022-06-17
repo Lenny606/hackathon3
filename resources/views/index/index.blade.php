@@ -27,6 +27,9 @@
     </nav>
     <div class="main">
 
+        <h1 class="h2">"AT ST. HECTOR'S, WE CARE."</h1>
+        <br>
+
         <ul>
             <?php foreach ($animals as $value): ?>
 
