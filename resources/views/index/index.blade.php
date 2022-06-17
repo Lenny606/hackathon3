@@ -30,33 +30,10 @@
         <h1 class="h2">"AT ST. HECTOR'S, WE CARE."</h1>
         <br>
 
-        <ul>
-            <?php foreach ($animals as $value): ?>
-
-            <li>
-                <h3>
-                    <?=$value->name?>
-                </h3>
-            </li>
-            <li>Species:
-                <?=$value->species?>
-            </li>
-            <li>Breed:
-                <?=$value->breed?>
-            </li>
-            <li>Age:
-                <?=$value->age?>
-            </li>
-            <li>Weight:
-                <?=$value->weight?>
-            </li>
-            <br>
-            <?php endforeach; ?>
-        </ul>
     </div>
     <footer>
         <p>© St. Hector's Veterinary Clinic 2022</p>
-        <footer>
+    </footer>
 
 
 </body>

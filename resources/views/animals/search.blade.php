@@ -1,43 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Animal</title>
+    <title>St. Hector's Veterinary Clinic - Search</title>
+
+    <link rel="stylesheet" href="/css/app.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
 </head>
+
 <body>
+    <nav class="nav">
 
-    <h1>Results</h1>
-   
-    {{-- <h1>{{$result->name}}</h1> --}}
-    {{-- 
-{{-- 
-    <form action="{{ route('search') }}" method="get">
+        <div class=logo>
+            <img src="img/vetlogo.png" />
+            <h2 class="h2">ST. HECTOR'S VETERINARY CLINIC</h2>
+        </div>
 
-        <input
-            type="text"
-            name="search"
-            value="{{ $result }}"
-        >
+        <form action="/home/search" method="get">
+            <input name="search" type="text">
+            <input type="submit" value="Search">
+        </form>
 
-        <button>Search</button> --}}
+    </nav>
 
-        {{-- this is really hidden from the outside --}}
+    <div class="main">
 
-    {{-- </form> --}}
+        <h1>Results</h1>
 
-    <ul>
-        @foreach ($result as $animal)
+        <ul>
+            @foreach ($result as $animal)
             <li>
-                <a href="{{route('animal.detail', $animal->id)}}"> 
-                     {{ $animal->name }}
+                <a href="{{route('animal.detail', $animal->id)}}">
+                    {{ $animal->name }}
                     ({{ $animal->age }})
                     ({{ $animal->weight }})
                 </a>
             </li>
-        @endforeach
-    </ul> 
+            @endforeach
+        </ul>
+    </div>
+
+    <footer>
+        <p>© St. Hector's Veterinary Clinic 2022</p>
+    </footer>
 
 </body>
+
 </html>
