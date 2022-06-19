@@ -25,9 +25,6 @@
         <form action="/home/search" method="get">
             <input name="search" type="text">
             <input type="submit" value="Search">
-            <a href="/create">
-                <input type="button" value="New Record" />
-            </a>
         </form>
 
     </nav>
@@ -35,11 +32,11 @@
     <div class="main">
 
         <h1>Results</h1>
-        <h3>Search results for: &nbsp; {{$name}}  &nbsp; | &nbsp; Number of results: &nbsp; {{$number_of_records}}</h3>
-        
+        <h3>Search results for: &nbsp; {{$name}}</h3>
 
+    
         <ul>
-            @foreach ($result as $animal)
+            @foreach ($result_next as $animal)
             <li>
                 <a href="{{route('animal.detail', $animal->id)}}">
                     Pet name: {{ $animal->name }} |
@@ -49,9 +46,9 @@
             </li>
             @endforeach
         </ul>
-        <br>
-        <a href="{{route('animal.search_next', $name)}}">Page:&nbsp;{{$page}} &nbsp; next page -></a>
-        
+
+        <a href="/search.blade_next.php">Page:&nbsp;{{$next_page}} &nbsp; next page -></a>
+        <a href="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<-&nbsp;previous page</a>
 
     </div>
 

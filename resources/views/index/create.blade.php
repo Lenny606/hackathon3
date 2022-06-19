@@ -50,6 +50,8 @@
         </form>
     </div>
 
+    @include('common/errors');
+
     <footer>
         <p>© St. Hector's Veterinary Clinic 2022</p>
     </footer>
